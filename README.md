@@ -77,12 +77,12 @@ Search the project for `[ADD`. Each one is also marked on the page: a sand panel
 
 ### Results — do not invent these
 
-No traffic, sales, ranking or follower figure is published. Add one only with a source you are happy to show (a screenshot or an export), then delete the placeholder.
+Jo’s early 2025 Instagram results and Nova’s July 2024 SEO report are already on those case studies. Anything still listed here has no figure yet. Add one only with a source, then delete the placeholder.
 
 | Page | What is waiting |
 | --- | --- |
-| Intuitive Healing with Jo | `[ADD RESULT]` Website, shop or email figures, once Jo agrees. Later Instagram or Google Business figures. Early 2025 insight screenshots exist; **the numbers are deliberately not on this site** until she says they can be. |
-| Nova Holistic Spa | `[ADD RESULT]` July 2024 SEO report figures, once Nova and Tomedia agree. Bookings, gift-card sales, or a later month. **The report numbers are not on this site.** |
+| Intuitive Healing with Jo | `[ADD RESULT]` Website traffic, shop sales, or email performance. Instagram figures for early 2025 are published. |
+| Nova Holistic Spa | `[ADD RESULT]` Bookings, gift-card sales, or a later SEO month. The July 2024 report (sessions, organic search, organic social, engagement rate) is published. |
 | Gold & Sage | `[ADD RESULT]` Launch date, traffic, sales or social performance. |
 | Tea by Birdy | `[ADD RESULT]` Ad performance, blog or email or social figures, any sales lift. |
 | Kindred Souls Collective | `[ADD RESULT]` Instagram, class bookings or email performance. |
@@ -108,8 +108,8 @@ No traffic, sales, ranking or follower figure is published. Add one only with a 
 
 The pages name the clients, because a portfolio has to. Please check you have permission before the site is public:
 
-- **Jo** — name, website, creative, and any social screenshots. Anything about support work stays off the site.
-- **Nova and Tomedia** — name, the screenshots, and the July 2024 SEO figures if you decide to add them.
+- **Jo** — permission is in place for the work and the early 2025 Instagram figures, which are on the page. A homepage screenshot and product stills are still to be added. Anything about support work stays off the site.
+- **Nova and Tomedia** — permission is in place. The July 2024 SEO figures and the screenshots are on the page.
 - **Gold & Sage, Holy Threads, Monument Homes, Tickets in a Hat, Tea by Birdy** — name, and the images on each page. Tea by Birdy also needs which Journal posts are yours.
 - **Kelly / Kindred Souls** — name, the carousel, and whether the studio is still called Kindred Souls Collective.
 - **Tomedia** — describing this work as delivered while you were Project Manager / Content Writer, and leaving the “Site by Tomedia” / “Made by Tomedia” lines in place.
@@ -118,7 +118,6 @@ The pages name the clients, because a portfolio has to. Please check you have pe
 
 ## What was deliberately left out
 
-- Jo’s Instagram insight numbers, and Nova’s July 2024 SEO report numbers.
 - The Kindred Souls “Join our next class” carousel, until the repeated “of” is fixed.
 - Any dollar or ticket count printed inside the Tickets in a Hat illustration.
 - Keto cookbook and meal planners for Jo, the Nova “Skin Health” copy document, and the Kindred VibroSound booklet — those were not confirmed as part of the public credit.
