@@ -95,6 +95,7 @@ To point a page at a different filename, change the `src="..."` on that `<img>` 
 | `assets/images/work/sunflower-community-supports/card.webp` | Work index | 1200×900 |
 | `assets/images/work/sunflower-community-supports/gallery-01.webp` | Homepage, 25 November 2026 | 1400×1600 |
 | `assets/images/og.jpg` | Image shown when the site is shared. Red April, black Wray, digital marketing and AI coaching. | 1200×630 |
+| `assets/images/highlights/*.webp` | Work highlights reel. Each file also has a JPEG of the same name. | 944×754 |
 | `apple-touch-icon.png` | Home-screen icon on Apple devices. | 180×180 |
 
 Intuitive Healing with Jo and Monument Homes are type-led on purpose. There is no picture until you add one. To add a card image, upload `assets/images/work/intuitive-healing-with-jo/card.webp` (or `monument-homes/card.webp`) at about 1200×900, then add an `<img>` in `work/index.html` in that project’s card, using the same pattern as Nova.
