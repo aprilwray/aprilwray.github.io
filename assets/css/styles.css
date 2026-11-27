@@ -426,10 +426,10 @@ body { padding-top: 4.5rem; }
 
 /* Ribbon */
 
-.ribbon-band {
+section.ribbon-band {
   position: relative;
-  background: var(--ink);
-  color: var(--paper);
+  background-color: #111111;
+  color: #f4f1ea;
   padding: 4.2rem 0 4.6rem;
   overflow: hidden;
   min-height: 34rem;
@@ -442,7 +442,7 @@ body { padding-top: 4.5rem; }
 }
 
 .ribbon-kicker {
-  color: var(--vermilion);
+  color: #ff452c;
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -457,14 +457,14 @@ body { padding-top: 4.5rem; }
   line-height: 0.78;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: var(--paper);
+  color: #f4f1ea;
   max-width: 8ch;
 }
 
 .ribbon-band .btn {
   margin-top: 1.5rem;
-  background: var(--paper);
-  color: var(--ink);
+  background-color: #f4f1ea;
+  color: #111111;
 }
 .ribbon-band .btn .arrow-circle {
   background: var(--ink);
@@ -493,7 +493,6 @@ body { padding-top: 4.5rem; }
 .ribbon-mover {
   position: absolute;
   inset: 0;
-  transform: translate3d(0, 0, 0);
 }
 
 .ribbon-svg {
@@ -510,7 +509,10 @@ body { padding-top: 4.5rem; }
   height: auto;
   aspect-ratio: 3 / 4;
   object-fit: cover;
-  background: #f4f1ea;
+  background-color: #f4f1ea;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border: 8px solid #f4f1ea;
   box-shadow: 0 12px 22px rgba(25, 23, 20, 0.2);
   transform: translate(-50%, -50%) rotate(var(--rot));
@@ -1079,6 +1081,8 @@ body { padding-top: 4.5rem; }
   .ribbon-band {
     min-height: 40rem;
     overflow: hidden;
+    background-color: #111111;
+    color: #f4f1ea;
   }
   .ribbon-scene {
     position: absolute;
