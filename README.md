@@ -33,6 +33,7 @@ Open the `.html` file for that page and change the text. Leave the tags around i
 | Services | `services.html` |
 | About | `about.html` |
 | Contact | `contact.html` |
+| Form thank-you | `contact-thanks.html` (not in the sitemap) |
 | Missing page | `404.html` |
 
 Colours and type live at the top of `assets/css/styles.css`, under `:root`.
@@ -93,7 +94,8 @@ To point a page at a different filename, change the `src="..."` on that `<img>` 
 | `assets/images/work/capstone-industries/gallery-01.webp` | Homepage, 25 November 2026 | 1400×1600 |
 | `assets/images/work/sunflower-community-supports/card.webp` | Work index | 1200×900 |
 | `assets/images/work/sunflower-community-supports/gallery-01.webp` | Homepage, 25 November 2026 | 1400×1600 |
-| `assets/images/og.jpg` | Image shown when the site is shared. It has the name on it. | 1200×630 |
+| `assets/images/og.jpg` | Image shown when the site is shared. Red April, black Wray, digital marketing and AI coaching. | 1200×630 |
+| `apple-touch-icon.png` | Home-screen icon on Apple devices. | 180×180 |
 
 Intuitive Healing with Jo and Monument Homes are type-led on purpose. There is no picture until you add one. To add a card image, upload `assets/images/work/intuitive-healing-with-jo/card.webp` (or `monument-homes/card.webp`) at about 1200×900, then add an `<img>` in `work/index.html` in that project’s card, using the same pattern as Nova.
 
@@ -103,8 +105,8 @@ The Kindred Souls class-booking carousel is not on the site. The file repeats th
 
 These are not on the public pages, on purpose.
 
-- Email address. When you have it, add a `mailto:` link on `contact.html` with the label **Email April**, and you can add it to the footer.
-- Instagram and LinkedIn URLs, same idea. Don’t link them until the addresses are real.
+- The contact form posts to FormSubmit (`https://formsubmit.co/aprilwray09@gmail.com`). The first submission sends a confirmation email to that inbox. Open it once so later notes are delivered. Until then, FormSubmit holds them.
+- Instagram, only if you want a profile linked. Leave it off until the address is real.
 - Homepage screenshot, and any product or planner stills, for Intuitive Healing with Jo.
 - Homepage screenshot for Monument Homes.
 - Website, shop or email figures for Jo. Instagram figures are already published.

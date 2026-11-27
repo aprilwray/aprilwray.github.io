@@ -4,19 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact · April Wray</title>
-<meta name="description" content="Tell April Wray what needs sorting. Remote work, and local meetings in Melbourne.">
+<meta name="description" content="Hire April Wray for websites, SEO, socials, ads and AI coaching. Melbourne, Australia. Remote welcome.">
 <link rel="canonical" href="https://aprilwray.github.io/contact.html">
 <meta name="theme-color" content="#F4F1EA">
 <meta property="og:title" content="Contact · April Wray">
-<meta property="og:description" content="Tell April Wray what needs sorting. Remote work, and local meetings in Melbourne.">
+<meta property="og:description" content="Hire April Wray for websites, SEO, socials, ads and AI coaching. Melbourne, Australia. Remote welcome.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://aprilwray.github.io/contact.html">
-<!-- IMAGE: replace /assets/images/og.jpg (recommended 1200x630) -->
 <meta property="og:image" content="https://aprilwray.github.io/assets/images/og.jpg">
+<meta property="og:image:alt" content="April Wray — digital marketing and AI coaching">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="April Wray">
 <meta property="og:locale" content="en_AU">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact · April Wray">
+<meta name="twitter:description" content="Hire April Wray for websites, SEO, socials, ads and AI coaching. Melbourne, Australia. Remote welcome.">
+<meta name="twitter:image" content="https://aprilwray.github.io/assets/images/og.jpg">
+<meta name="twitter:image:alt" content="April Wray — digital marketing and AI coaching">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/css/styles.css?v=8">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="stylesheet" href="/assets/css/styles.css?v=9">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -28,7 +36,7 @@
     <nav id="site-nav" class="site-nav" aria-label="Primary">
       <ul>
         <li><a href="/">Home</a></li><li><a href="/work/">Work</a></li><li><a href="/services.html">Services</a></li><li><a href="/about.html">About</a></li>
-        <li><a class="nav-contact" href="/contact.html" aria-current="page">Contact <span class="arrow-circle" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h12"/><path d="M13 6l6 6-6 6"/></svg></span></a></li>
+        <li><a class="nav-contact" href="/contact.html" aria-current="page">[hire her] <span class="arrow-circle" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h12"/><path d="M13 6l6 6-6 6"/></svg></span></a></li>
       </ul>
     </nav>
   </div>
@@ -36,27 +44,61 @@
 <main id="main">
   <header class="page-hero">
     <div class="wrap">
-      <p class="kicker">Contact</p>
+      <p class="kicker">[hire her]</p>
       <h1>Tell me what needs sorting.</h1>
-      <p class="lede">A new website, ongoing marketing or one specific thing you’d like to get done? Send me a note. I work remotely and can meet locally in Melbourne.</p>
-      <p class="aside-note">A simple AI setup counts, if you want the team to actually use it. So does a brand that needs to look and sound like one business.</p>
+      <p class="lede">A website, SEO, socials, ads, or AI coaching so your team can actually run it. Send a note. I work remotely and can meet locally in Melbourne.</p>
+      <div class="hero-actions">
+        <a class="hero-btn" href="mailto:aprilwray09@gmail.com">Email April</a>
+        <a class="hero-text" href="tel:+61402785240">0402 785 240</a>
+      </div>
     </div>
   </header>
   <div class="wrap contact-grid stack">
-    <div class="prose">
-      <h2>What to put in your first email</h2>
-      <ul>
-        <li>Who you are and what your business does.</li>
-        <li>What you’d like help with. A list is perfect.</li>
-        <li>When you’d like to get started, if you know.</li>
-      </ul>
-      <p>A few lines are plenty. If all you’ve got is “our website needs help”, tell me what’s bothering you about it and we can start there.</p>
-      <p class="aside-note">A tidy list is lovely. A slightly chaotic paragraph works too.</p>
-      <p>Email isn’t on this page yet. When it is, the button will simply say Email April.</p>
+    <div>
+      <h2 class="form-title">Send a note</h2>
+      <p class="form-intro">Who you are, what you’d like help with, and when you’d like to start if you know. A few lines are plenty. A slightly chaotic paragraph works too.</p>
+      <form class="enquiry" id="enquiry" action="https://formsubmit.co/aprilwray09@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New enquiry from aprilwray.github.io">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://aprilwray.github.io/contact-thanks.html">
+        <p class="hp" aria-hidden="true">
+          <label for="hp-field">Leave this empty</label>
+          <input id="hp-field" type="text" name="_honey" tabindex="-1" autocomplete="off">
+        </p>
+        <div class="field">
+          <label for="enquiry-name">Name</label>
+          <input id="enquiry-name" name="name" type="text" required autocomplete="name" maxlength="200">
+        </div>
+        <div class="field">
+          <label for="enquiry-email">Email</label>
+          <input id="enquiry-email" name="email" type="email" required autocomplete="email" maxlength="200">
+        </div>
+        <div class="field">
+          <label for="enquiry-business">Business or website <span class="optional">(optional)</span></label>
+          <input id="enquiry-business" name="Business or website" type="text" autocomplete="organization" maxlength="300">
+        </div>
+        <fieldset class="need">
+          <legend>What do you need?</legend>
+          <label><input type="checkbox" name="Website" value="Yes"> Website</label>
+          <label><input type="checkbox" name="SEO" value="Yes"> SEO</label>
+          <label><input type="checkbox" name="Socials" value="Yes"> Socials</label>
+          <label><input type="checkbox" name="Ads" value="Yes"> Ads</label>
+          <label><input type="checkbox" name="AI for business" value="Yes"> AI for business / AI coaching</label>
+          <label><input type="checkbox" name="Not sure" value="Yes"> Not sure</label>
+        </fieldset>
+        <div class="field">
+          <label for="enquiry-message">Message</label>
+          <textarea id="enquiry-message" name="message" required rows="6" maxlength="5000"></textarea>
+        </div>
+        <button class="hero-btn" type="submit">Send</button>
+      </form>
+      <p class="form-note">This sends to aprilwray09@gmail.com. A short spam check runs, then you’ll see a thank-you page.</p>
     </div>
     <dl class="facts">
-      <div><dt>Based</dt><dd>Melbourne’s northern suburbs, Australia</dd></div>
-      <div><dt>A good fit</dt><dd>Wellness businesses and other brands that want a hand with their website, content or marketing.</dd></div>
+      <div><dt>Email</dt><dd><a href="mailto:aprilwray09@gmail.com">aprilwray09@gmail.com</a></dd></div>
+      <div><dt>Phone</dt><dd><a href="tel:+61402785240">0402 785 240</a></dd></div>
+      <div><dt>Based</dt><dd>Melbourne, AU</dd></div>
+      <div><dt>A good fit</dt><dd>Wellness businesses and other brands that want a hand with their website, SEO, socials, ads or AI for business.</dd></div>
     </dl>
   </div>
 </main>
@@ -64,7 +106,7 @@
   <div class="wrap footer-grid">
     <div>
       <p class="footer-name">April Wray</p>
-      <p>Websites, search, socials and the words that tie it all together.</p>
+      <p>Digital marketing and AI coaching. Websites, SEO, socials, ads and AI for business.</p>
       <p class="footer-note">The website, the socials and the ads, talking to each other.</p>
     </div>
     <nav class="footer-nav" aria-label="Footer">
@@ -76,7 +118,8 @@
     </nav>
     <div>
       <p class="kicker">Enquiries</p>
-      <p><a class="text-link" href="/contact.html">Start a conversation <span aria-hidden="true">↗</span></a></p>
+      <p><a class="text-link" href="/contact.html">[hire her] <span aria-hidden="true">↗</span></a></p>
+      <p><a href="mailto:aprilwray09@gmail.com">aprilwray09@gmail.com</a></p>
     </div>
   </div>
   <div class="wrap footer-base">
