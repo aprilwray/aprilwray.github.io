@@ -468,6 +468,12 @@ button, input { font: inherit; color: inherit; }
   pointer-events: none;
 }
 
+.ribbon-mover {
+  position: absolute;
+  inset: 0;
+  transform: translate3d(0, 0, 0);
+}
+
 .ribbon-svg {
   position: absolute;
   inset: 0;
@@ -1057,27 +1063,29 @@ button, input { font: inherit; color: inherit; }
     margin: 0.8rem 0 0 auto;
   }
 
-  .ribbon-band { min-height: 0; }
-  .ribbon-scene {
-    position: relative;
-    left: auto;
-    right: auto;
-    top: auto;
-    width: 100%;
-    height: auto;
-    aspect-ratio: auto;
-    margin-top: 1.8rem;
-    padding-inline: var(--gutter);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.55rem;
+  .ribbon-band {
+    min-height: 40rem;
+    overflow: hidden;
   }
-  .ribbon-svg { display: none; }
+  .ribbon-scene {
+    position: absolute;
+    left: -28%;
+    right: -42%;
+    top: 62%;
+    width: auto;
+    height: auto;
+    aspect-ratio: 1500 / 780;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .ribbon-svg { display: block; }
   .ribbon-scene img {
-    position: static;
-    width: 100%;
-    transform: none;
-    aspect-ratio: 4 / 5;
+    position: absolute;
+    width: 16%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    transform: translate(-50%, -50%) rotate(var(--rot));
   }
 
   .pager { flex-direction: column; }
@@ -1106,27 +1114,7 @@ button, input { font: inherit; color: inherit; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .ribbon-band { min-height: 0; }
-  .ribbon-scene {
-    position: relative;
-    left: auto;
-    right: auto;
-    top: auto;
-    width: 100%;
-    height: auto;
-    aspect-ratio: auto;
-    margin-top: 1.4rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.45rem;
-  }
-  .ribbon-svg { display: none; }
-  .ribbon-scene img {
-    position: static;
-    width: 100%;
-    transform: none;
-    aspect-ratio: 4 / 5;
-  }
+  .ribbon-mover { transform: none !important; }
 }
 
 @media (max-width: 380px) {
