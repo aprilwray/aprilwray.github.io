@@ -1,6 +1,5 @@
 /* April Wray portfolio
-   Paper #F4F1EA, ink #191714, vermilion #FF452C, signal red #F5140B.
-   Small text on red uses ink. Buttons use a deeper red so cream type clears contrast.
+   Paper #F4F1EA and white, ink #111. Vermilion #FF452C is a small accent only.
    Edit colours here. Search HTML for "IMAGE:" to find pictures. */
 
 @font-face {
@@ -29,13 +28,14 @@
 
 :root {
   --paper: #f4f1ea;
-  --ink: #191714;
+  --paper-deep: #e7e2d8;
+  --white: #ffffff;
+  --ink: #111111;
+  --ink-soft: #3c3834;
   --muted: #4a453e;
   --vermilion: #ff452c;
-  --red-deep: #c8100a;
-  --red: #f5140b;
-  --line: rgba(25, 23, 20, 0.18);
-  --line-strong: rgba(25, 23, 20, 0.4);
+  --line: rgba(17, 17, 17, 0.18);
+  --line-strong: rgba(17, 17, 17, 0.4);
   --cream: #f4f1ea;
   --sans: "Source Sans 3", "Avenir Next", "Segoe UI", sans-serif;
   --display: "Archivo Black", "Arial Black", Impact, sans-serif;
@@ -138,12 +138,18 @@ button, input { font: inherit; color: inherit; }
 /* Header */
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 5;
+  left: 0;
+  right: 0;
+  z-index: 30;
   background: var(--paper);
   border-bottom: 1px solid var(--line);
 }
+
+body { padding-top: 4.5rem; }
+
+.helix { margin-top: -4.5rem; }
 
 .header-inner {
   position: relative;
@@ -375,7 +381,8 @@ button, input { font: inherit; color: inherit; }
   border-color: var(--paper);
 }
 
-.btn:hover { background: var(--red-deep); color: var(--paper); }
+.btn:hover { background: var(--ink); color: var(--paper); }
+.btn:hover .arrow-circle { background: var(--vermilion); border-color: var(--vermilion); color: var(--paper); }
 
 .btn-ghost {
   background: transparent;
@@ -391,8 +398,8 @@ button, input { font: inherit; color: inherit; }
   border-color: var(--ink);
 }
 
-.btn-ghost:hover { background: transparent; color: var(--red-deep); }
-.btn-ghost:hover .arrow-circle { border-color: var(--red-deep); color: var(--red-deep); }
+.btn-ghost:hover { background: transparent; color: var(--ink); }
+.btn-ghost:hover .arrow-circle { border-color: var(--vermilion); color: var(--vermilion); background: transparent; }
 
 .avail {
   border-top: 1px solid var(--ink);
@@ -421,8 +428,8 @@ button, input { font: inherit; color: inherit; }
 
 .ribbon-band {
   position: relative;
-  background: var(--red);
-  color: var(--paper);
+  background: var(--paper);
+  color: var(--ink);
   padding: 4.2rem 0 4.6rem;
   overflow: hidden;
   min-height: 34rem;
@@ -555,7 +562,7 @@ button, input { font: inherit; color: inherit; }
 
 .service-index span { color: var(--muted); }
 
-.service-index a:hover strong { color: var(--red-deep); }
+.service-index a:hover strong { color: var(--vermilion); }
 
 /* Selected work */
 
@@ -626,8 +633,8 @@ button, input { font: inherit; color: inherit; }
 /* Closer */
 
 .closer {
-  background: var(--red);
-  color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
   padding: 3.6rem 0;
 }
 
@@ -655,15 +662,15 @@ button, input { font: inherit; color: inherit; }
   width: 3.4rem;
   height: 3.4rem;
   border-radius: 50%;
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--paper);
+  color: var(--ink);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
 }
 
-.closer .round-btn:hover { background: var(--paper); color: var(--ink); }
+.closer .round-btn:hover { background: var(--vermilion); color: var(--paper); }
 
 /* Interior */
 
@@ -784,7 +791,7 @@ button, input { font: inherit; color: inherit; }
   line-height: 0.9;
 }
 .stat-name { font-weight: 700; margin-top: 0.25rem; }
-.stat-delta { margin-top: 0.35rem; color: var(--red-deep); font-weight: 700; }
+.stat-delta { margin-top: 0.35rem; color: var(--vermilion); font-weight: 700; }
 
 .pager {
   display: flex;
@@ -904,7 +911,7 @@ button, input { font: inherit; color: inherit; }
   text-transform: uppercase;
 }
 
-.entry .kicker { color: var(--red-deep); margin-bottom: 0.3rem; }
+.entry .kicker { color: var(--vermilion); margin-bottom: 0.3rem; }
 .entry-type-mark {
   min-height: 12rem;
   display: flex;
@@ -964,15 +971,6 @@ button, input { font: inherit; color: inherit; }
   text-transform: uppercase;
   color: var(--muted);
 }
-.portrait {
-  margin-top: 1rem;
-  background: white;
-  border: 1px solid var(--ink);
-  padding: 0.45rem;
-}
-.portrait img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; background: var(--paper); }
-.portrait figcaption { margin-top: 0.4rem; color: var(--muted); font-size: 0.92rem; }
-
 /* Footer */
 
 .site-footer {
@@ -1114,7 +1112,170 @@ button, input { font: inherit; color: inherit; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .ribbon-mover { transform: none !important; }
+  .helix-letter { animation: none; opacity: 1; filter: none; transform: none; }
+}
+
+.helix {
+  position: relative;
+  height: calc(100svh * 6);
+  background: var(--paper);
+}
+.helix-stage {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+  background: var(--paper);
+}
+.helix-persp {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}
+.helix-letters {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 6vw;
+  transform-origin: 50% 46%;
+  pointer-events: none;
+}
+.helix-letters h1 { margin: 0; font: inherit; color: inherit; }
+.helix-line {
+  margin: 0;
+  font-family: "Archivo Black", "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: clamp(4.6rem, 16vw, 13rem);
+  line-height: 0.82;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.helix-line-2 {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.helix-count {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-size: clamp(0.85rem, 1.4vw, 1.15rem);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.helix-letter {
+  display: inline-block;
+  animation: helix-in 0.7s cubic-bezier(0.22, 0.7, 0.2, 1) both;
+}
+@keyframes helix-in {
+  from { transform: translateY(60%); filter: blur(12px); opacity: 0; }
+  to { transform: none; filter: none; opacity: 1; }
+}
+.helix-chrome {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.4rem;
+  z-index: 6;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 6vw;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  pointer-events: none;
+}
+.helix-hint { letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.78rem; white-space: nowrap; }
+.helix-world {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}
+.helix-group,
+.helix-screw {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  transform-style: preserve-3d;
+  transform-origin: 0 0;
+}
+.helix-slice {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 0 0;
+  transform-style: preserve-3d;
+}
+.helix-face {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  transform-origin: center center;
+}
+.helix-face.is-back { transform: rotateY(180deg) scaleX(-1); }
+.helix-grid {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.15rem 1rem;
+  align-content: center;
+  padding: 11vh 6vw 8vh;
+  pointer-events: none;
+}
+.helix-grid a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0;
+  transform-origin: center center;
+}
+.helix-grid a:focus-visible {
+  opacity: 1 !important;
+  filter: none !important;
+  transform: none !important;
+}
+.helix-gcard {
+  display: block;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  background: var(--paper-deep);
+}
+.helix-gcard img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.helix-gcap {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 720px) {
+  .helix-line { font-size: clamp(3.15rem, 18vw, 5rem); }
+  .helix-line-2 { flex-wrap: wrap; gap: 0.3rem 0.7rem; }
+  .helix-chrome { align-items: flex-end; bottom: 0.85rem; padding: 0 1rem; }
+  .helix-letters { padding: 0 1rem; }
+  .helix-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem 0.55rem;
+    padding: 4.6rem 0.85rem 4.2rem;
+  }
+  .helix-gcap { font-size: 0.68rem; letter-spacing: 0.06em; }
 }
 
 @media (max-width: 380px) {
