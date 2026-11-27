@@ -428,8 +428,8 @@ body { padding-top: 4.5rem; }
 
 .ribbon-band {
   position: relative;
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
   padding: 4.2rem 0 4.6rem;
   overflow: hidden;
   min-height: 34rem;
@@ -442,7 +442,7 @@ body { padding-top: 4.5rem; }
 }
 
 .ribbon-kicker {
-  color: var(--paper);
+  color: var(--vermilion);
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -461,7 +461,22 @@ body { padding-top: 4.5rem; }
   max-width: 8ch;
 }
 
-.ribbon-band .btn { margin-top: 1.5rem; }
+.ribbon-band .btn {
+  margin-top: 1.5rem;
+  background: var(--paper);
+  color: var(--ink);
+}
+.ribbon-band .btn .arrow-circle {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.ribbon-band .btn:hover { background: var(--paper); color: var(--ink); }
+.ribbon-band .btn:hover .arrow-circle {
+  background: var(--vermilion);
+  border-color: var(--vermilion);
+  color: var(--paper);
+}
 
 .ribbon-scene {
   position: absolute;
@@ -1113,6 +1128,7 @@ body { padding-top: 4.5rem; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .helix-letter { animation: none; opacity: 1; filter: none; transform: none; }
+  .ribbon-mover { transform: none !important; }
 }
 
 .helix {
@@ -1139,9 +1155,9 @@ body { padding-top: 4.5rem; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 6vw;
+  align-items: flex-start;
+  text-align: left;
+  padding: 0 var(--gutter);
   transform-origin: 50% 46%;
   pointer-events: none;
 }
@@ -1155,21 +1171,6 @@ body { padding-top: 4.5rem; }
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--ink);
-  white-space: nowrap;
-}
-.helix-line-2 {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 1.2rem;
-}
-.helix-count {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 500;
-  font-size: clamp(0.85rem, 1.4vw, 1.15rem);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
   white-space: nowrap;
 }
 .helix-letter {
@@ -1189,7 +1190,7 @@ body { padding-top: 4.5rem; }
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0 6vw;
+  padding: 0 var(--gutter);
   font-size: 0.95rem;
   color: var(--ink-soft);
   pointer-events: none;
@@ -1266,10 +1267,8 @@ body { padding-top: 4.5rem; }
 }
 
 @media (max-width: 720px) {
-  .helix-line { font-size: clamp(3.15rem, 18vw, 5rem); }
-  .helix-line-2 { flex-wrap: wrap; gap: 0.3rem 0.7rem; }
-  .helix-chrome { align-items: flex-end; bottom: 0.85rem; padding: 0 1rem; }
-  .helix-letters { padding: 0 1rem; }
+  .helix-line { font-size: clamp(3.4rem, 22vw, 5.4rem); }
+  .helix-chrome { align-items: flex-end; bottom: 0.85rem; }
   .helix-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.7rem 0.55rem;

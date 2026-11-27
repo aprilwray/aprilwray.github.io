@@ -1,6 +1,6 @@
 # April Wray — portfolio
 
-Static site for [aprilwray.github.io](https://aprilwray.github.io). Plain HTML and CSS, plus one self-hosted script for the homepage helix. No build step and no CDN. Edit a file, commit it to `main`, and GitHub Pages publishes it.
+Static site for [aprilwray.github.io](https://aprilwray.github.io). Plain HTML and CSS, plus two self-hosted scripts: the homepage helix and the curled ribbon under it. No build step and no CDN. Edit a file, commit it to `main`, and GitHub Pages publishes it.
 
 ## Turn GitHub Pages on
 
@@ -61,6 +61,14 @@ To point a page at a different filename, change the `src="..."` on that `<img>` 
 
 | File | Where it shows | Recommended size |
 | --- | --- | --- |
+| `assets/images/home/ribbon-01.webp` | Curled ribbon under the hero, tile 1 (Nova) | 800×1000 |
+| `assets/images/home/ribbon-02.webp` | Ribbon tile 2 (Gold & Sage) | 800×1000 |
+| `assets/images/home/ribbon-03.webp` | Ribbon tile 3 (Kindred Souls) | 800×1000 |
+| `assets/images/home/ribbon-04.webp` | Ribbon tile 4 (Holy Threads) | 800×1000 |
+| `assets/images/home/ribbon-05.webp` | Ribbon tile 5 (Tea by Birdy) | 800×1000 |
+| `assets/images/home/ribbon-06.webp` | Ribbon tile 6 (Gold & Sage picnic) | 800×1000 |
+| `assets/images/home/ribbon-07.webp` | Ribbon tile 7 (Capstone) | 800×1000 |
+| `assets/images/home/ribbon-08.webp` | Ribbon tile 8 (Sunflower) | 800×1000 |
 | `assets/images/work/nova-holistic-spa/card.webp` | Homepage helix and Work index | 1200×900 |
 | `assets/images/work/nova-holistic-spa/gallery-01.webp` | Nova case study, desktop homepage | 1600×1100 |
 | `assets/images/work/nova-holistic-spa/gallery-02.webp` | Nova case study, phone | 430×932 |
