@@ -1,5 +1,5 @@
 /* April Wray portfolio
-   Paper #F4F1EA and white, ink #111. Vermilion #FF452C is a small accent only.
+   Paper #F4F1EA and white, ink #111. The only #FF452C is the hero name April.
    Edit colours here. Search HTML for "IMAGE:" to find pictures. */
 
 @font-face {
@@ -33,7 +33,6 @@
   --ink: #111111;
   --ink-soft: #3c3834;
   --muted: #4a453e;
-  --vermilion: #ff452c;
   --line: rgba(17, 17, 17, 0.18);
   --line-strong: rgba(17, 17, 17, 0.4);
   --cream: #f4f1ea;
@@ -209,7 +208,7 @@ body { padding-top: 4.5rem; }
 }
 
 .site-nav a[aria-current="page"] {
-  box-shadow: inset 0 -2px 0 var(--vermilion);
+  box-shadow: inset 0 -2px 0 var(--ink);
 }
 
 .nav-contact {
@@ -254,11 +253,29 @@ body { padding-top: 4.5rem; }
   text-transform: uppercase;
 }
 
-.name-april { color: var(--vermilion); }
+.name-april { color: #ff452c; }
 
 .name-wray {
   text-align: right;
   margin-top: 0.22em;
+}
+
+.hero-wheel {
+  position: absolute;
+  left: 38%;
+  top: 26%;
+  z-index: 2;
+  width: min(11rem, 18vw);
+  height: 9.2rem;
+  overflow: hidden;
+  pointer-events: none;
+  background: transparent;
+}
+
+.hero-wheel-stage {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
 }
 
 .hero-frame {
@@ -311,13 +328,11 @@ body { padding-top: 4.5rem; }
 }
 
 .hero-copy {
-  display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(16rem, 0.7fr);
-  gap: 2rem 3rem;
-  align-items: end;
-  margin-top: 1.5rem;
-  padding-top: 1.25rem;
+  display: block;
+  margin-top: 0.6rem;
+  padding-top: 1.15rem;
   border-top: 1px solid var(--ink);
+  max-width: 40rem;
 }
 
 .hero-copy h1 {
@@ -381,8 +396,8 @@ body { padding-top: 4.5rem; }
   border-color: var(--paper);
 }
 
-.btn:hover { background: var(--ink); color: var(--paper); }
-.btn:hover .arrow-circle { background: var(--vermilion); border-color: var(--vermilion); color: var(--paper); }
+.btn:hover { background: var(--paper); color: var(--ink); border: 1px solid var(--ink); }
+.btn:hover .arrow-circle { background: var(--ink); border-color: var(--ink); color: var(--paper); }
 
 .btn-ghost {
   background: transparent;
@@ -399,7 +414,7 @@ body { padding-top: 4.5rem; }
 }
 
 .btn-ghost:hover { background: transparent; color: var(--ink); }
-.btn-ghost:hover .arrow-circle { border-color: var(--vermilion); color: var(--vermilion); background: transparent; }
+.btn-ghost:hover .arrow-circle { border-color: var(--ink); color: var(--ink); background: transparent; }
 
 .avail {
   border-top: 1px solid var(--ink);
@@ -442,7 +457,7 @@ section.ribbon-band {
 }
 
 .ribbon-kicker {
-  color: #ff452c;
+  color: #f4f1ea;
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -471,11 +486,11 @@ section.ribbon-band {
   color: var(--paper);
   border-color: var(--ink);
 }
-.ribbon-band .btn:hover { background: var(--paper); color: var(--ink); }
+.ribbon-band .btn:hover { background-color: #111111; color: #f4f1ea; }
 .ribbon-band .btn:hover .arrow-circle {
-  background: var(--vermilion);
-  border-color: var(--vermilion);
-  color: var(--paper);
+  background: #f4f1ea;
+  border-color: #f4f1ea;
+  color: #111111;
 }
 
 .ribbon-scene {
@@ -579,7 +594,7 @@ section.ribbon-band {
 
 .service-index span { color: var(--muted); }
 
-.service-index a:hover strong { color: var(--vermilion); }
+.service-index a:hover strong { color: var(--ink); }
 
 /* Selected work */
 
@@ -625,7 +640,7 @@ section.ribbon-band {
   text-transform: uppercase;
 }
 
-.work-card .kicker { color: var(--vermilion); }
+.work-card .kicker { color: var(--ink); }
 
 .work-card p:last-child { color: #e7e1d6; max-width: 36ch; }
 
@@ -644,7 +659,7 @@ section.ribbon-band {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--vermilion);
+  color: var(--ink);
 }
 
 /* Closer */
@@ -687,7 +702,7 @@ section.ribbon-band {
   text-decoration: none;
 }
 
-.closer .round-btn:hover { background: var(--vermilion); color: var(--paper); }
+.closer .round-btn:hover { background: #ffffff; color: var(--ink); }
 
 /* Interior */
 
@@ -808,7 +823,7 @@ section.ribbon-band {
   line-height: 0.9;
 }
 .stat-name { font-weight: 700; margin-top: 0.25rem; }
-.stat-delta { margin-top: 0.35rem; color: var(--vermilion); font-weight: 700; }
+.stat-delta { margin-top: 0.35rem; color: var(--ink); font-weight: 700; }
 
 .pager {
   display: flex;
@@ -890,7 +905,7 @@ section.ribbon-band {
 }
 
 .filters input:focus-visible + label {
-  outline: 3px solid var(--vermilion);
+  outline: 3px solid var(--ink);
   outline-offset: 3px;
 }
 
@@ -928,7 +943,7 @@ section.ribbon-band {
   text-transform: uppercase;
 }
 
-.entry .kicker { color: var(--vermilion); margin-bottom: 0.3rem; }
+.entry .kicker { color: var(--ink); margin-bottom: 0.3rem; }
 .entry-type-mark {
   min-height: 12rem;
   display: flex;
@@ -1058,17 +1073,25 @@ section.ribbon-band {
     padding-right: 0;
   }
 
-  .hero { overflow: visible; }
-  .name-lockup { min-height: 0; display: flex; flex-direction: column; }
+  .hero { overflow: hidden; }
+  .name-lockup { min-height: 0; display: flex; flex-direction: column; padding-bottom: 6.4rem; }
   .name-wray { text-align: left; margin-top: 0; }
+  .hero-wheel {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    width: min(13.5rem, 70vw);
+    height: 7.8rem;
+  }
   .hero-frame {
     position: relative;
     left: auto;
     top: auto;
-    width: min(16rem, 78%);
-    max-width: 78%;
+    width: min(11.5rem, 58%);
+    max-width: 58%;
     margin: 0.9rem 0 0.2rem;
-    transform: rotate(-3deg);
+    transform: none;
   }
   .teaser {
     position: relative;
@@ -1122,7 +1145,7 @@ section.ribbon-band {
   .nav-toggle { display: inline-flex; }
   .nav-check:checked + .nav-toggle .show { display: none; }
   .nav-check:checked + .nav-toggle .hide { display: inline; }
-  .nav-check:focus-visible + .nav-toggle { outline: 3px solid var(--vermilion); outline-offset: 3px; }
+  .nav-check:focus-visible + .nav-toggle { outline: 3px solid var(--ink); outline-offset: 3px; }
   .site-nav { display: none; flex-basis: 100%; padding-bottom: 0.4rem; }
   .nav-check:checked ~ .site-nav { display: block; }
   .site-nav ul { flex-direction: column; align-items: stretch; }
